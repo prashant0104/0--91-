@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+<body>
+    <input type="text" maxlength="11" id="firstnum">
+    <button onclick="myFunction()">Try it</button>
+    <input id="secNum">
+    <script>
+    function myFunction() {
+    var first = $('#firstnum').val();
+    if (first.indexOf(0) === 0){
+     var final = first.toString();
+      var chcek = final.replace('0','')
+       $('#secNum').val( '+91'+ chcek);
+    }
+    }
+    </script>
+
+
+</body>
+</html>
